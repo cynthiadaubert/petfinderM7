@@ -1,6 +1,7 @@
 import { Router } from "@vaadin/router";
 
-const API_BASE_URL = "http://localhost:5050"; // heroku link
+const API_BASE_URL =
+  "https://petfinder-m7.onrender.com" || "http://localhost:5050";
 
 const state = {
   data: {
