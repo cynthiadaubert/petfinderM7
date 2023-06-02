@@ -43,7 +43,7 @@
     "devs": "yarn run dev && yarn run env",
     "env": "ts-node ./be-src/dev.ts",
     "start": "node ./be-dist/api.js",
-    "build": "npm run build:be",
+    "build": "yarn build:front && yarn build:be",
     "sync": "ts-node ./be-src/sync.ts"
   },
   "devDependencies": {
