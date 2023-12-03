@@ -37,7 +37,7 @@
   },
   "scripts": {
     "dev:be": "nodemon --watch \"./be-src/api.ts\" --exec \"ts-node ./be-src/api.ts\"",
-    "dev:fe": "parcel serve ./fe-dist/index.html",
+    "dev:fe": "parcel serve ./fe-dist/index.html --dist-dir ./dist",
     "build:be": "tsc",
     "build:fe": "parcel build ./fe-dist/index.html",
     "dev": "concurrently \"yarn dev:fe\" \"yarn dev:be\"",
