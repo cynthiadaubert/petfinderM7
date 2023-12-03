@@ -305,7 +305,7 @@ const state = {
     }
   },
 
-  //GET PETS BY USER ID
+  //DELETE PETS BY ID
   async deletePetReportById(petId) {
     const cs = this.getState();
     try {

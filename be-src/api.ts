@@ -21,15 +21,18 @@ import {
   getPetsById,
 } from "./controllers/pets-controller";
 
-const port = process.env.PORT || 5050;
+const port = process.env.PORT || 8080;
 const app = express();
 app.use(express.json({ limit: "50mb" })); //para parsear el body completo
 app.use(cors());
 
 // Enable CORS for all routes
 app.use((req, res, next) => {
-  res.setHeader("Access-Control-Allow-Origin", "http://localhost:1234");
-  res.setHeader("Access-Control-Allow-Methods", "GET, POST, PATCH, DELETE");
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader(
+    "Access-Control-Allow-Methods",
+    "GET, POST, PATCH, PUT, DELETE"
+  );
   res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
   next();
 });

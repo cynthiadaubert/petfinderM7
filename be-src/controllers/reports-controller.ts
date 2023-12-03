@@ -7,8 +7,8 @@ export async function createReport(petId: number, data: any) {
     const petReport = await Pet.findByPk(petId);
     let userId = petReport.get("userId") as any;
     let userFromPet = await User.findByPk(userId);
-    const recipient =
-      /* "cynthiaperezdaubert@gmail.com"; */ userFromPet.get("email");
+    const recipient = "cynthiaperezdaubert@gmail.com";
+    userFromPet.get("email");
     const sender = "cynthia-g1993@hotmail.com";
     console.log("RECIPIENT DEL REPORT CONTROLLER", recipient);
     const createdReport = await Report.create({
