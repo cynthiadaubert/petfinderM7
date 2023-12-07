@@ -1,7 +1,6 @@
 import { Router } from "@vaadin/router";
 
-const API_BASE_URL = "https://petfinder-m7.onrender.com";
-
+const API_BASE_URL = "https://petfinder-m7.web.app";
 
 const state = {
   data: {

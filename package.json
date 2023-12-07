@@ -46,7 +46,9 @@
     "build": "yarn build:fe && yarn build:be",
     "sync": "ts-node ./be-src/sync.ts",
     "firebase": "firebase login",
-    "fireinit": "firebase init"
+    "fireinit": "firebase init",
+    "fireb": "firebase init hosting",
+    "dep": "firebase deploy --only hosting"
   },
   "devDependencies": {
     "@types/cors": "^2.8.13",
